@@ -30,7 +30,7 @@ public class Zadanie14_i_15 {
         driver = new ChromeDriver();
         // Zmaksymalizuj okno przeglądarki
         driver.manage().window().maximize();
-        // Przejdź do Google
+        // Przejdź do aavtrain.com
         driver.get("https://aavtrain.com/");
 
         }

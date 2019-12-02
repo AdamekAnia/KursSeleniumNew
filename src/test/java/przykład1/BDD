@@ -1,0 +1,30 @@
+Zadanie 13
+
+Feature: Search
+
+    Scenario: Search indifferent word in Google
+    Given user is on Google search page
+    When user types indifferent word into the search input
+    And he clicks on search button
+    Then first result contains searchded word
+
+Feature: Login
+    Scenario: Login into the bank account
+    Given user goes to the bank login page
+    When user fills in login and password inputs
+    Then he is logged in
+
+Feature: Transfer
+    Scenario: Transfer money to other account
+    Login into the bank account
+    Given user goes to the bank login page
+    And user fills in login and password inputs
+    And he is logged in
+    When user transfers money to other account
+    Then the money is out of his account
+
+Feature: Log out
+    Scenario: Loging out from an existing account
+    Given user logged in to an account on a bank page
+    When user clicks log out on his profile tab
+    Then he is logged out
