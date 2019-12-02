@@ -1,218 +1,165 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("google-text-search.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Zadanie14_i_15.feature");
 formatter.feature({
   "line": 1,
-  "name": "Google search",
+  "name": "Creating an account",
   "description": "",
-  "id": "google-search",
+  "id": "creating-an-account",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
   "line": 3,
-  "name": "user can search any keyword",
+  "name": "user can create new account",
   "description": "",
-  "id": "google-search;user-can-search-any-keyword",
+  "id": "creating-an-account;user-can-create-new-account",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 4,
-  "name": "an open browser with google.com",
+  "name": "an open browser with aavtrain.com",
   "keyword": "Given "
 });
 formatter.step({
   "line": 5,
-  "name": "a keyword \u003ckeyword\u003e is entered in input field",
+  "name": "user clicks register button",
   "keyword": "When "
 });
 formatter.step({
   "line": 6,
-  "name": "the first one should contain \u003cexpectedWord\u003e",
-  "keyword": "Then "
+  "name": "fills in data \u003cfirstname\u003e \u003clastname\u003e \u003cemailaddress\u003e \u003cusername\u003e \u003caddress1\u003e \u003cstate\u003e \u003ccity\u003e \u003cpassword\u003e \u003czip\u003e",
+  "keyword": "And "
 });
 formatter.step({
   "line": 7,
-  "name": "close browser",
+  "name": "new account is created",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
+  "name": "close the browser",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 9,
+  "line": 10,
   "name": "",
   "description": "",
-  "id": "google-search;user-can-search-any-keyword;",
+  "id": "creating-an-account;user-can-create-new-account;",
   "rows": [
     {
       "cells": [
-        "keyword",
-        "expectedWord"
-      ],
-      "line": 10,
-      "id": "google-search;user-can-search-any-keyword;;1"
-    },
-    {
-      "cells": [
-        "karol",
-        "karol"
+        "firstname",
+        "lastname",
+        "emailaddress",
+        "username",
+        "address1",
+        "state",
+        "city",
+        "password",
+        "zip"
       ],
       "line": 11,
-      "id": "google-search;user-can-search-any-keyword;;2"
+      "id": "creating-an-account;user-can-create-new-account;;1"
     },
     {
       "cells": [
-        "jacek",
-        "jacek"
+        "Liliana",
+        "Jaworska",
+        "lilianajaworska@email.com",
+        "liliana.jaworska",
+        "Janaszka",
+        "AK",
+        "Warszawa",
+        "liliana123",
+        "99501"
       ],
       "line": 12,
-      "id": "google-search;user-can-search-any-keyword;;3"
+      "id": "creating-an-account;user-can-create-new-account;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 11,
-  "name": "user can search any keyword",
-  "description": "",
-  "id": "google-search;user-can-search-any-keyword;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 4,
-  "name": "an open browser with google.com",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "a keyword karol is entered in input field",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 6,
-  "name": "the first one should contain karol",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 7,
-  "name": "close browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "GoogleSearch.openGoogleSearch()"
-});
-formatter.result({
-  "duration": 7140321760,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "karol",
-      "offset": 10
-    }
-  ],
-  "location": "GoogleSearch.enterKeyword(String)"
-});
-formatter.result({
-  "duration": 2880998073,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "karol",
-      "offset": 29
-    }
-  ],
-  "location": "GoogleSearch.theFirstOneShouldContainKeyword(String)"
-});
-formatter.result({
-  "duration": 1163278,
-  "status": "passed"
-});
-formatter.match({
-  "location": "GoogleSearch.closeBrowser()"
-});
-formatter.result({
-  "duration": 83841324,
-  "status": "passed"
-});
-formatter.scenario({
   "line": 12,
-  "name": "user can search any keyword",
+  "name": "user can create new account",
   "description": "",
-  "id": "google-search;user-can-search-any-keyword;;3",
+  "id": "creating-an-account;user-can-create-new-account;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 4,
-  "name": "an open browser with google.com",
+  "name": "an open browser with aavtrain.com",
   "keyword": "Given "
 });
 formatter.step({
   "line": 5,
-  "name": "a keyword jacek is entered in input field",
-  "matchedColumns": [
-    0
-  ],
+  "name": "user clicks register button",
   "keyword": "When "
 });
 formatter.step({
   "line": 6,
-  "name": "the first one should contain jacek",
+  "name": "fills in data Liliana Jaworska lilianajaworska@email.com liliana.jaworska Janaszka AK Warszawa liliana123 99501",
   "matchedColumns": [
-    1
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
   ],
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.step({
   "line": 7,
-  "name": "close browser",
+  "name": "new account is created",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
+  "name": "close the browser",
   "keyword": "And "
 });
 formatter.match({
-  "location": "GoogleSearch.openGoogleSearch()"
+  "location": "Zadanie14_i_15.openAavtrain()"
 });
 formatter.result({
-  "duration": 2480903331,
+  "duration": 4780349841,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Zadanie14_i_15.registerNewUser()"
+});
+formatter.result({
+  "duration": 498405926,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "jacek",
-      "offset": 10
+      "val": "Liliana Jaworska lilianajaworska@email.com liliana.jaworska Janaszka AK Warszawa liliana123 99501",
+      "offset": 14
     }
   ],
-  "location": "GoogleSearch.enterKeyword(String)"
+  "location": "Zadanie14_i_15.fillsTheFormular(String,String,String,String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 2445151853,
-  "status": "passed"
+  "duration": 2849530,
+  "error_message": "cucumber.runtime.CucumberException: Arity mismatch: Step Definition \u0027cucumber.test.Zadanie14_i_15.fillsTheFormular(String,String,String,String,String,String,String,String,String) in file:/home/anna/IdeaProjects/KursSelenium/target/test-classes/\u0027 with pattern [fills in data (.*)] is declared with 9 parameters. However, the gherkin step has 1 arguments [Liliana Jaworska lilianajaworska@email.com liliana.jaworska Janaszka AK Warszawa liliana123 99501]. \nStep: And fills in data Liliana Jaworska lilianajaworska@email.com liliana.jaworska Janaszka AK Warszawa liliana123 99501\n\tat cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)\n\tat cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\n",
+  "status": "failed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "jacek",
-      "offset": 29
-    }
-  ],
-  "location": "GoogleSearch.theFirstOneShouldContainKeyword(String)"
+  "location": "Zadanie14_i_15.accountcreated()"
 });
 formatter.result({
-  "duration": 157953,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "GoogleSearch.closeBrowser()"
+  "location": "Zadanie14_i_15.closeBrowser()"
 });
 formatter.result({
-  "duration": 79991941,
-  "status": "passed"
+  "status": "skipped"
 });
 });
