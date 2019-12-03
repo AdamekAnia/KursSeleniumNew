@@ -1,0 +1,7 @@
+<application>
+  <component name="IntentionManagerSettings">
+    <ignoreAction name="Java/Modifiers/Change access modifier" />
+    <ignoreAction name="Language injection/Inject language or reference" />
+    <ignoreAction name="Java/Declaration/Wrap vararg arguments with explicit array creation" />
+  </component>
+</application>
