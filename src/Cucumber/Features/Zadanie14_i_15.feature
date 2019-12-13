@@ -10,4 +10,4 @@ Feature: Creating an account
     Examples:
       | firstname | lastname | emailaddress              | username         | address1 | state | city     | password   | zip   |
       | Liliana   | Jaworska | lilianajaworska@email.com | liliana.jaworska | Janaszka | AK    | Warszawa | liliana123 | 99501 |
-#      | Aldona    | Kowalik  | aldonakowalik@email.com   | aldona.kowalik   | Akacjowa | 45    | Lublin   | aldona123  | 10067 |
+      | Aldona    | Kowalik  | aldonakowalik@email.com   | aldona.kowalik   | Akacjowa | 45    | Lublin   | aldona123  | 10067 |

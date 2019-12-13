@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Zadanie14_i_15 {
-    //definicje metod
+
     public String firstname;
     public String lastname;
     public String emailaddress;
@@ -18,14 +18,15 @@ public class Zadanie14_i_15 {
     public String address1;
     public String state;
     public String city;
-    public String password;
     public String zip;
+    public String password;
     public WebDriver driver;
 
     @Given("open browser with aavtrain.com")
     public void openAavtrain() {
         // Skonfiguruj sterownik przeglądarki
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver",
+                "src/main/resources/drivers/chromedriver");
         // Uruchom nowy egzemplarz przeglądarki Chrome
         driver = new ChromeDriver();
         // Zmaksymalizuj okno przeglądarki
@@ -42,7 +43,8 @@ public class Zadanie14_i_15 {
            register.click();
        }
 
-       @And( "fills in with data (.*)")
+       @And( "fills in with data (.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*) (.*) ")
+
         public void fillsTheFormular(String firstname, String lastname, String emailaddress, String username, String address1, String state, String city, String zip, String password){
         // Znajdź element wprowadzania tekstu na podstawie jego nazwy
          WebElement firstName = driver.findElement(By.name("first_name"));
@@ -100,5 +102,6 @@ public class Zadanie14_i_15 {
         public void closeBrowser(){
             driver.quit();
     }
-    }
+
+  }
 

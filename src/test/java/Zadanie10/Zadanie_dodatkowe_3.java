@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.List;
+
 public class Zadanie_dodatkowe_3 {
 
     //To jest Zadanie dodatkowe 3 - Funkcje Selenium WebDriver
@@ -36,8 +38,8 @@ public class Zadanie_dodatkowe_3 {
         price810.click();
         // Sprawdzenie pierwszego produktu
         // Znajdź element na podstawie xPath copy full xPath) - wejście do elementu
-        WebElement product1 = driver.findElement(By.partialLinkText("Mountain fox"));
-        product1.click();
+        WebElement product1 = driver.findElement(By.xpath("/html/body/main/section/div/div[1]/div[2]/div[2]/section[6]/ul/li[1]/label/a"));
+        clickOnArticle("Mountain Fox");
 
         }
 
@@ -46,4 +48,17 @@ public class Zadanie_dodatkowe_3 {
        // Zamknij przeglądarkę
      //   driver.quit();
     }
+    private void clickOnArticle(String articleName) {
+        List<WebElement>products = driver.findElements(By.xpath("//div[@id='js-product-list']//article"));
+        WebElement foxElement;
+        for (WebElement element: products) {
+            if (element.getText().contains(articleName)) {
+                element.click();
+            }
+        }
+    }
+
+
+
+
 }
